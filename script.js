@@ -1,4 +1,5 @@
 
+
 let map, infoWindow;
 // function initMap() {
 //   new google.maps.Map(document.getElementById("map"), {
@@ -16,6 +17,14 @@ function initMap() {
     center: { lat: 19.199785295564922, lng: 73.19290347632486 },
     zoom: 18,
   });
+
+    //19.19966072246815, 73.19311334782242
+  new google.maps.Marker({
+    position: { lat: 19.19966072246815, lng: 73.19311334782242 },
+    map,
+    title: "Hello World!",
+  });
+
   infoWindow = new google.maps.InfoWindow();
 
   const locationButton = document.createElement("button");
